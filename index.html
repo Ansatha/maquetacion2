@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agencia de viajes">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>RoamING's</title>
+</head>
+<body>
+    <header>
+        <img src="./img/Logo_Roams_Blanco.png" alt="">
+        <nav>
+            <ul>
+                <li><a href="#">Reserva tu viaje</a></li>
+                <li><a href="intranet.html">Intranet</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="formulario">
+            <form action="">
+                <fieldset>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="lastN">Apellidos:</label>
+                    <input type="text" id="lastN" name="lastN">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </fieldset>
+                <fieldset>
+                    <label for="origen">Origen:</label>
+                        <select id="origen" name="origen">
+                            <option value=void></option>
+                            <option value="Palencia">Palencia</option>
+                            <option value="Albacete">Albacete</option>
+                            <option value="Lepe">Lepe</option>
+                        </select>
+                    <label for="destino">Destino:</label>
+                        <select id="destino" name="destino">
+                            <option value=void></option>
+                            <option value="Los Angeles">Los Angeles</option>
+                            <option value="Palma">Palma</option>
+                            <option value="Moscú">Moscú</option>
+                            <option value="Tenerife">Tenerife</option>
+                            <option value="Gran Canaria">Gran Canaria</option>
+                            <option value="Barcelona">Barcelona</option>
+                            <option value="Vigo">Vigo</option>
+                            <option value="Orense">Orense</option>
+                            <option value="Japón">Pekín</option>
+                            <option value="New York">Nueva York</option>
+                            <option value="Galicia">Galicia</option>
+                            <option value="Canarias">Canarias</option>
+                            <option value="Mallorca">Mallorca</option>
+                        </select>
+                </fieldset>
+                <fieldset>   
+                    <button id = "send" type="button" onclick="catcherInfo()"><b>RESERVAR</b></button>
+                    <button id = "reset" type="reset" ><b>BORRAR</b></button>
+                </fieldset> 
+            </form>
+        </section>
+        <section id = "portada">
+            <h1>Teletransportame Scotty!</h1>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
