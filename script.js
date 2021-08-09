@@ -24,6 +24,7 @@ function catcherInfo()
 
     arrayReservas.push(reservasJson);
     console.log(reservasJson,'\n1.', arrayReservas);
+    return arrayReservas
 };
 
 function filterData()
